@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorites | Sara Aghamohammadi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto 2rem auto;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-buttons a {
+      background-color: #1a237e;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .nav-buttons a:hover {
+      background-color: #3949ab;
+    }
+    h1 {
+      text-align: center;
+      color: #1a237e;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 220px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      margin: 0 0 0.5rem 0;
+      color: #1a237e;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .card a {
+      text-decoration: none;
+      background: #1a237e;
+      color: white;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      width: fit-content;
+      transition: background 0.3s;
+    }
+    .card a:hover {
+      background: #3949ab;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-buttons">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+    </div>
+  </header>
+
+  <h1>What Inspires Me</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>Natural Language Processing</h2>
+      <p>I love the idea that machines can understand and even generate human language. Working with transformers and BERT has made me realize how magical AI can feel sometimes.</p>
+    </div>
+    <div class="card">
+      <h2>Deep Learning Architectures</h2>
+      <p>There's something beautiful about how CNNs or LSTMs mimic the brain. I'm always curious to see what new things these models can do.</p>
+    </div>
+    <div class="card">
+      <h2>Evolutionary Algorithms</h2>
+      <p>The fact that nature-inspired algorithms can solve complex problems fascinates me. I enjoy seeing how chaos can lead to intelligent solutions.</p>
+    </div>
+    <div class="card">
+      <h2>Andrew Ng</h2>
+      <p>The person who made AI feel possible for me. His courses were not just informative—they were empowering.</p>
+      <a href="https://www.coursera.org/instructor/~464" target="_blank">View Profile</a>
+    </div>
+    <div class="card">
+      <h2>fast.ai</h2>
+      <p>This course taught me to believe in building first, understanding second—and that deep learning is for everyone.</p>
+      <a href="https://course.fast.ai" target="_blank">Explore fast.ai</a>
+    </div>
+    <div class="card">
+      <h2>Quera AI Bootcamp</h2>
+      <p>A turning point in my journey. I went in with curiosity and came out with confidence.</p>
+    </div>
+    <div class="card">
+      <h2>Teaching</h2>
+      <p>Helping others learn is one of the ways I reinforce my own learning—and honestly, it just makes me happy.</p>
+    </div>
+  </div>
+</body>
+</html>
