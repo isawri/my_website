@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | isawri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #222;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem 0;
+      color: #1a237e;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .card a {
+      text-decoration: none;
+      background: #1a237e;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+      align-self: start;
+      margin-top: 1rem;
+    }
+    .card a:hover {
+      background: #3949ab;
+    }
+    .nav-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-start; 
+      margin-bottom: 2rem;
+      padding-left: 2rem; 
+    }
+    
+    .nav-buttons a {
+  background-color: #1a237e;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+    .nav-buttons a:hover {
+  background-color: #3949ab;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-buttons">
+      <a href="index.html">Home Page</a>
+      <a href="favorites.html">Favorite</a>
+    </div>
+  </header>
+  
+  <h1>My GitHub Projects</h1>
+  <div class="grid">
+    <div class="card">
+      <h2>SnakeMatrix</h2>
+      <p>Snake game on an 8x8 LED matrix using Arduino and directional buttons.</p>
+      <a href="https://github.com/isawri/SnakeMatrix-An-Arduino-Powered-LED-Snake-Game" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>BERT Retriever</h2>
+      <p>NLP pipeline using BERT embeddings and FAISS indexing for document similarity search.</p>
+      <a href="https://github.com/isawri/BERT-Retriever-Intelligent-Document-Embedding-Retrieval-Pipeline" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>InsightHouse</h2>
+      <p>Data analysis on Iranian household income and expenditures using machine learning.</p>
+      <a href="https://github.com/isawri/InsightHouse-Household-Income-Expenditure-Analysis" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>SentimentInsight</h2>
+      <p>Sentiment analysis of Amazon reviews using NLP and classification models.</p>
+      <a href="https://github.com/isawri/SentimentInsight" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>AutoPlateBlur</h2>
+      <p>Automatically detects and blurs vehicle license plates using OpenCV and Python.</p>
+      <a href="https://github.com/isawri/AutoPlateBlur" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Database Design and Implementation</h2>
+      <p>ER diagramming, normalization, and SQL schema implementation for a sample database.</p>
+      <a href="https://github.com/isawri/Database-Design-and-Implementation" target="_blank">View on GitHub</a>
+    </div>
+    <div class="card">
+      <h2>Electric Circuits Project</h2>
+      <p>Design and simulation of basic electric circuits using circuit modeling tools.</p>
+      <a href="https://github.com/isawri/Project-of-Electric-Circuits" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
