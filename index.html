@@ -73,13 +73,18 @@
       border-radius: 50%;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
+
+    /* Remove focus trap styles if present */
+    [tabindex="10"], [tabindex="99"], [tabindex="500"] {
+      outline: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="nav-buttons">
-      <a href="projects.html">Projects</a>
-      <a href="favorites.html">Favorite</a>
+      <a href="projects.html" aria-label="View Projects Page">Projects</a>
+      <a href="favorites.html" aria-label="View Favorites Page">Favorite</a>
     </div>
   </header>
 
